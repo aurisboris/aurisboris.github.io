@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="./styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<script src="./scripts/main.js" defer></script>
+</head>
+<body>
+
+<div id = 'wip'>
+    <h1>WORK IN PROGRESS</h1>
+    <p>Mobile View for this site is still a work in progress. The Website may not look as intended from your device</p>
+    <button onclick="closeWip()">Okay</button>
+</div>
+<div id='navbar'>
+    <div id = 'navbar-text'>
+        <p>Menu</p>
+        <img src= './images/background/hamburger_icon.png'></img>
+    </div>
+    
+    <div id ='navbar-options'>
+        <div id ='semi-container'>
+            <button onclick= 'navbar_click(1)'>Home Page</button>
+            <button onclick= 'navbar_click(2)'>Projects</button>
+            <button onclick= 'navbar_click(3)'}>Skills</button>
+            <button onclick= 'navbar_click(4)'>Education</button>
+            <button onclick= 'navbar_click(5)'>Work Experience</button>
+        </div>                
+    </div>
+</div>
+    <div id ='navbar-back'></div>
+
+<div class="lines">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</div>
+
+<div id = 'home-parent'>
+    <div id = 'home-content'>
+        <div id = 'me-image'>
+            <div id = 'me-block1'></div>
+            <div id = 'me-block2'></div>
+            <img src = './images/home/me.jpg'/>
+        </div>
+        <div id = 'me-info'>
+            <div id = 'me-name'>
+                <h1>RAITHEON FARED C. ASTUDILLO</h1>
+            </div>
+            <div id = 'me-summ'>
+                <p style= 'margin:0;margin-bottom:1.5vw; background-color: #fcdb03; width:30%; font-weight: bold;'>
+                    Web Developer
+                </p>
+                <p id = 'me-summ-content'>
+                    I am a BS Information Technology graduate specializing in web technologies. I am capable of both frontend and backend development.
+                    I am an adaptable and resourceful individual that can learn new technologies fast on demand. 
+                </p>
+            </div>
+            <div id = 'me-info-designblock'></div>
+        </div>
+    </div>
+        
+    <div id = 'home-content2'>
+        <div class = 'card-designblock'>
+            <div class = 'observe-tracker'>
+                <div id ='move-square'>
+                    <div id = 'traverse'>
+                        <div id = 'traverse-overlay'></div>
+                    </div>
+                </div>
+            </div>
+            <div id = 'card-icon-back'></div>
+        </div>
+        <div class='con2-card' id = 'trait-1'>
+            <div class='card-content'>
+                <div class= 'card-icon'><img src = './images/home/posi.gif' alt= 'positive'></img></div>
+                <div class = 'card-info'>
+                    <div class='card-text'>
+                        <div class = 'card-trait'><h1>POSITIVE ATTITUDE</h1></div>
+                        <p class = 'trait-desc'>
+                            Brimming with positivity, I am confident that I can navigate through tough situations easily.
+                            With an upbeat attitude, I believe that a solution
+                            can be found for any problem.
+                        </p>
+                    </div>
+                    <div class = 'next-trait'>
+                        <div class= 'next-text' onclick="switch_trait(0)"><p><span>N</span>EXT</p></div>
+                        <div class = 'next-back-hover'></div>
+                        <div class = 'next-back'></div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        
+        <div class='con2-card' id ='trait-2'>
+            <div class='card-content'>
+                <div class= 'card-icon'><img src = './images/home/acad.gif' alt= 'academic'></img></div>
+                <div class = 'card-info'>
+                    <div class='card-text'>
+                        <div class = 'card-trait'><h1>LEARNING ORIENTED</h1></div>
+                        <p class = 'trait-desc'>
+                            Anything and everything is a learning opportunity. I value failure as much as I value succeses,
+                            learning from failures means that I have grown and learning from successes means that I am able to 
+                            surpass myself for even greater results.
+                        </p>
+                    </div>
+                    <div class = 'next-trait'>
+                        <div class= 'next-text'  onclick="switch_trait(1)"><p><span>N</span>EXT</p></div>
+                        <div class = 'next-back-hover'></div>
+                        <div class = 'next-back'></div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        
+        <div class='con2-card' id='trait-3'>
+            <div class='card-content'>
+                <div class= 'card-icon'><img src = './images/home/achieve.gif' alt= 'achievement'></img></div>
+                <div class = 'card-info'>
+                    <div class='card-text'>
+                        <div class = 'card-trait'><h1>ACHIEVEMENT DRIVEN</h1></div>
+                        <p class = 'trait-desc'>
+                            While I don't mind experiencing failures, I always act in a way that ensures that the
+                            end result of my actions would lead to success and ideal scenarios. I have a strong passion
+                            for meeting goals and achieving excellence.
+                        </p>
+                    </div>
+                    <div class = 'next-trait'>
+                        <div class= 'next-text'  onclick="switch_trait(2)"><p><span>N</span>EXT</p></div>
+                        <div class = 'next-back-hover'></div>
+                        <div class = 'next-back'></div>
+                    </div>
+                </div>  
+            </div>
+        </div>                   
+    </div>
+    
+    <div id = 'home-content3'>
+        <div>
+            <h1>PATIENCE</h1>
+            <br/>
+            <p> 
+                In a world where instant gratification is desired by the majority, we should strive to uphold the value of patience. 
+                Good things will eventually come and when that time comes, we greet it with
+                a smile proudly proclaiming that we endured and had finally made it.
+            </p>
+        </div>                    
+    </div>
+</div>
+
+<div id = 'project-parent'>
+    <div id = 'project-selection'>
+        <div id = 'project-selection-header'>
+            <div id = 'psh-designblock'>
+                <div id ='psh-db1' class = 'polka'></div>
+                <div id = 'psh-db2'> 
+                    <div id ='db2-text'>
+                        <div id = 'db2t-content'>
+                            <div id = 'db2tc-border'>
+                                <div id ='db2cb-circle' class='circle'></div>
+                                <div id = 'db2cb-square' class = 'striped-diag'></div>
+                            </div>
+                            <h1>PORTFOLI</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>PROJECTS</h1>
+        </div>
+        <div id = 'project-selection-header-extend'>
+            <div class = 'pshe'></div>
+            <div class = 'pshe'></div>
+            <div class = 'pshe'></div>
+            <div class = 'pshe'></div>
+            <div class = 'pshe'></div>
+            <div class = 'pshe'></div>
+            <div class = 'pshe'></div>
+            <div class = 'pshe'></div>
+            <div class = 'pshe'></div>
+            <div class = 'pshe'></div>
+        </div>
+        <div id = 'project-selection-options'>
+            <div class = 'pso-container' id ='baos'>
+                <div class = 'pso-icon'>
+                    <img src= './images/projects/icons/baos-icon.png' alt = 'BAOS'/>
+                </div>
+                <div class = 'pso-overview'>
+                    <div class = 'pso-project'>
+                        <div class = 'pso-name'><p>BAOS: Barangay Automated Office System.</p></div>
+                        <div class = 'pso-order'>1/2</div>
+                       
+                    </div>
+                    <div class = 'pso-role'>
+                        <p>Role: Project Leader</p>
+                    </div>
+                    <div class = 'pso-desc'>
+                        <div class = 'psod-left'>
+                            <div class = 'triangle-left pso-switch-left' onclick="switch_proj(1)"></div>
+                            <div class = 'triangle-left psodl-hover-effect'></div>
+                        </div>
+                        <div class = 'psod-text'>
+                            <p>
+                                A locally hosted web application developed for the barangay officials of SLU SVP Housing Village, Bakakeng, Baguio City.
+                                In accordance with the IT Project curriculum of Saint Louis University, the web application was developed to
+                                support the business processes of the barangay, specifically the processes concerned with the barangay Secretary and Treasurer. 
+                                <br/> <br/>
+                                As project leader, my responsibilities involved the management of the group, handling communication with the clients, and as well as 
+                                handling the responsibilities of being a lead backend/frontend developer for the project. 
+                                <br/> <br/>
+                                The web application was developed using NodeJS/Express, MySQL, Vanilla HTML/CSS/JS, and Bootstrap.
+                            </p>
+                        </div>
+                        <div class = 'psod-right' >
+                            <div class = 'triangle-right pso-switch-right' onclick="switch_proj(1)"></div>
+                            <div class = 'triangle-right psodr-hover-effect'></div>
+                        </div>
+                    </div>
+                    <div class = 'pso-select'>
+                        <button onclick = 'showFeatures()'>VIEW FEATURES</button>
+                        <div class = 'psos-hover-effect'>
+                            <div class = 'arrow-right psos-hover'></div>
+                            <div class = 'arrow-filler'></div>
+                            <div class = 'arrow-left psos-hover'></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = 'pso-container' id ='aws'>
+                <div class = 'pso-icon'>
+                    <img src= './images/projects/icons/aws-icon.png' alt = 'BAOS'/>
+                </div>
+                <div class = 'pso-overview'>
+                    <div class = 'pso-project'>
+                        <div class = 'pso-name'><p>AWS Dev 2 Inventory Management System.</p></div>
+                        <div class = 'pso-order'>2/2</div>
+                       
+                    </div>
+                    <div class = 'pso-role'>
+                        <p>Role: Backend/Frontend Developer</p>
+                    </div>
+                    <div class = 'pso-desc'>
+                        <div class = 'psod-left'>
+                            <div class = 'triangle-left pso-switch-left' onclick="switch_proj(0)"></div>
+                            <div class = 'triangle-left psodl-hover-effect'></div>
+                        </div>
+                        <div class = 'psod-text'>
+                            <p>
+                                A web application project I contributed to during my internship period at Advanced World Solutions/Systems.
+                                The project's purpose was to develop a web based Information Management System(IMS) and to migrate the inventory data
+                                from the Dev 2 QA Department's old IMS to the new application.
+                                <br/><br/>
+                                As an intern backend/frontend developer, I was involved in manually testing the application, writing the technical and user documentation, 
+                                applying fixes to bugs, and developing backend APIs and frontend components for new features.
+                            </p>
+                        </div>
+                        <div class = 'psod-right' >
+                            <div class = 'triangle-right pso-switch-right' onclick="switch_proj(0)"></div>
+                            <div class = 'triangle-right psodr-hover-effect'></div>
+                        </div>
+                    </div>
+                    <div class = 'pso-select'>
+                        <p>Due to a signed Non Disclosure Agreement, I cannot provide any further details regarding this web application.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='project-features'>
+        <div id = 'pf-baos'>
+            <div class = 'return'>
+                <button onclick = 'showProjectSelection(0)'>RETURN TO PROJECT SELECTION</button>
+                <div class = 'pfr-hover-effect'>
+                    <div class = 'arrow-right pfr-hover'></div>
+                    <div class = 'arrow-filler'></div>
+                    <div class = 'arrow-left pfr-hover'></div>
+                </div>
+            </div>
+            <div class ='pf-proj'>
+                <img src= './images/projects/icons/baos-icon.png' alt = 'BAOS'/>
+                <p>BAOS: Barangay Automated Office System</p>
+            </div>
+            <div class = 'pf-feature-header'>
+                <div class = 'pffh-designblock'>
+                    <div class = 'slope-right checkered-x pffhdb-slopes'></div>
+                    <div class = 'pffhdb-proj'><h1>BAOS</h1></div>
+                    <div class = 'slope-left checkered-x pffhdb-slopes'></div>
+
+                </div>
+                <div class ='pffh-text'>
+                    <p>FEATURES</p>
+                </div>
+            </div>
+            <div class = 'pf-feature-list'>
+                <ul>
+                    <li>
+                        <div class='pffl-container'>
+                            <div>
+                                <img src = '.\images\features\baos\ux-user-app-svgrepo-com.svg'></img>
+                            </div>
+                            <div>
+                                <h1>User Management</h1>
+                                <p>
+                                    Basic CRUD functions for users. Allows for the Admin to manage the list
+                                    of barangay officials and create user accounts for each. User permissions
+                                    can be managed to control which user is able to perform specific functions in the application.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class='pffl-container'>
+                            <div>
+                                <img src='.\images\features\baos\calendar-lines-pen-svgrepo-com.svg'></img>
+                            </div>
+                            <div>
+                                <h1>Schedule Management</h1>
+                                <p>
+                                    Allows for the Barangay Secretary to perform CRUD functions when setting up a
+                                    schedule for the barangay officials. Schedules can be viewed in the website's dashboard
+                                    and schedules can be set to either be viewable for all users or only to specific users.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class='pffl-container'>
+                            <div>
+                                <img src='.\images\features\baos\certificate-svgrepo-com.svg'></img>
+                            </div>
+                            <div>
+                                <h1>Issue Barangay Certificates</h1>
+                                <p>
+                                    The Barangay Secretary has the ability to select from the list of barangay residents registered in the database
+                                    and to generate and issue a barangay certificate based on the uploaded file template. The Secretary may create 
+                                    additional certificate types that they can issue and the Treasurer is able to set the amount to be collected for each certificate type. 
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class='pffl-container'>
+                            <div>
+                                <img src='.\images\features\baos\basic-bin-app-svgrepo-com.svg'></img>
+                            </div>
+                            <div>
+                                <h1>Garbage Fee Collection</h1>
+                                <p>
+                                    Keeps a record of all outstanding balances for all households registereed in the database.
+                                    The Treasurer is able to record payments from the residents representing the different households
+                                    and is also able to set the amount for the fees and penalties upon late payment.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class='pffl-container'>
+                            <div>
+                                <img src= '.\images\features\baos\basic-app-file-4-svgrepo-com.svg'></img>
+                            </div>
+                            <div>
+                                <h1>RCD Document Generation</h1>
+                                <p>
+                                    Generates a Report of Collections and Deposits Document based on the records of issued certificates, 
+                                    bank deposits, and garbage fee payments based on a specified date, year, or range of months.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class='pffl-container'>
+                            <div>
+                                <img src = '.\images\features\baos\ux-app-paper-svgrepo-com.svg'></img>
+                            </div>
+                            <div>
+                                <h1>Barangay Dispute Management</h1>
+                                <p>
+                                    Keeps a record of all filed complaints among the residents. Tracks the sessions conducted between the
+                                    assigned lupon and the dispute parties as well as the status of each case.  
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class='pffl-container'>
+                            <div>
+                                <img src = '.\images\features\baos\inventory-logistics-warehouse-svgrepo-com.svg'></img>
+                            </div>
+                            <div>
+                                <h1>Inventory Management</h1>
+                                <p>
+                                   Records all assets owned by the barangay officials. Allows for basic CRUD functions and
+                                   computes for the total value of assets. Assets can be borrowed and reserved by barangay residents and 
+                                   the status of such would be tracked.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class='pffl-container'>
+                            <div>
+                                <img src= '.\images\features\baos\basic-app-home-svgrepo-com.svg'></img>
+                            </div>
+                            <div>
+                                <h1>Community Management</h1>
+                                <p>
+                                    CRUD functions for all registered residents in the barangay. The list of residents
+                                    cam be viewed in its entirety or by household.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class = 'media-scroll'>
+                <div class = 'pf-media-header'>
+                    MEDIA
+                </div>
+                <div class = 'pf-media-list'>
+                    <ul>
+                        <li>
+                            <img src= './images/features/baos_media/1.png' alt = 'baos_med-1'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/2.png' alt = 'baos_med-2'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/3.png' alt = 'baos_med-3'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/4.png' alt = 'baos_med-4'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/5.png' alt = 'baos_med-5'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/6.png' alt = 'baos_med-6'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/7.png' alt = 'baos_med-7'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/8.png' alt = 'baos_med-8'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/9.png' alt = 'baos_med-9'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/10.png' alt = 'baos_med-10'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/11.png' alt = 'baos_med-11'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/12.png' alt = 'baos_med-12'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/13.png' alt = 'baos_med-13'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/14.png' alt = 'baos_med-14'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/15.png' alt = 'baos_med-15'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/16.png' alt = 'baos_med-16'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/17.png' alt = 'baos_med-17'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/18.png' alt = 'baos_med-18'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/19.png' alt = 'baos_med-19'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/20.png' alt = 'baos_med-20'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/21.png' alt = 'baos_med-21'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/22.png' alt = 'baos_med-22'></img>
+                        </li>
+
+                        <li>
+                            <img src= './images/features/baos_media/23.png' alt = 'baos_med-23'></img>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id='skills-parent'>
+    <div id = 'skills-content'>
+        <div id = 'sp-content'>
+            <div id = 'spc-header'>
+                <div id = 'spch-content'>
+                    <div id ='spchc-designblock'>
+                        <div class = 'striped-diag' id = 'spchc-db1'></div>
+                        <div id = 'spchc-db2'>
+                            <div class = 'circle' id = 'spchcdb2-1'></div>
+                            <div class = 'circle' id = 'spchcdb2-2'></div>
+                            <div class = 'circle' id = 'spchcdb2-3'></div>
+                        </div>
+                        <p>Tech<br/><span>STACK</span></p>
+                        <img src = './images/background/cogwheel.svg'></img> 
+                    </div>
+                    <h1>SKILLS</h1>
+                    
+                </div>
+                
+            </div>
+            <div id = 'spc-selection'>
+                <div>
+                    <div class = 'spcs-header'>
+                        <h1>Frontend</h1>
+                    </div>
+                    <div class = 'spcs-list'>
+                        <ul>
+                            <li>
+                                <div>
+                                    <image src = './images/skills/html.png' alt='html' id = 'HTML' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/css.png' alt='css' id = 'CSS' onmouseover="displaySkillDetail(this)"  onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/javascript.png' alt='js' id = 'Javascript' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/jquery.png' alt='jquery' id='JQuery' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/bootstrap.png' alt='bootstrap' id='Bootstrap' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/react.png' alt='react' id = 'React' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+                
+                <div>
+                    <div class = 'spcs-header'>
+                        <h1>Backend</h1>
+                    </div>
+                    <div class = 'spcs-list'>
+                        <ul>
+                            <li>
+                                <div>
+                                    <image src = './images/skills/nodejs.png' alt='nodejs' id = 'NodeJS' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/php.png' alt='php' id = 'PHP' onmouseover="displaySkillDetail(this)"  onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/nextjs.png' alt='nextjs' id = 'NextJS' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> 
+
+                </div>
+                
+                <div>
+                    <div class = 'spcs-header'>
+                        <h1>Database</h1>
+                    </div>
+                    <div class = 'spcs-list'>
+                        <ul>
+                            <li>
+                                <div>
+                                    <image src = './images/skills/mysql.png' alt='mysql' id = 'MySQL' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div> 
+                </div>
+
+                <div>
+                    <div class = 'spcs-header'>
+                        <h1>Others</h1>
+                    </div>
+                    <div class = 'spcs-list'>
+                        <ul>
+                            <li>
+                                <div>
+                                    <image src = './images/skills/java.png' alt='java' id = 'Java' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/python.png' alt='python' id = 'Python' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/c.png' alt='c' id = 'C' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/cpp.png' alt='cpp' id = 'C++' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/csh.png' alt='csh' id = 'C#' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/kotlin.png' alt='kotlin' id = 'Kotlin' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/wordpress.png' alt='wordpress' id = 'WordPress' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/figma.png' alt='figma' id = 'Figma' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/git.png' alt='git' id = 'Git' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/blender.png' alt='blender' id = 'Blender' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div>
+                                    <image src = './images/skills/adobeanimate.png' alt='adobeaniamte' id = 'AdobeAnimate' onmouseover="displaySkillDetail(this)" onmouseleave="clearSkillDetail()"></image>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div> 
+                </div>      
+            </div>
+            <div id = 'spc-detail'>
+                <div class = 'spcd-scroll'>
+                    <div class = 'spcd-image'>
+                        <img id = 'spcd-icon'></img>
+                    </div>
+                    <div class = 'spcd-name'>
+                        <p id = 'spcd-title'></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id = 'educ-parent'>
+    <div id = 'educ-content'>
+        <div id = 'ec-designblock'>
+            <div class = 'circle' id = 'edgb-1'></div>
+            <div id = 'edgb-2'></div>
+            <div id = 'edgb-3'></div>
+        </div>
+        <div id = 'educ-header'>
+            <div id = 'eh-overlay'></div>
+            <h1>EDUC. BACKGROUND</h1>
+        </div>
+        <div id = 'educ-info'>
+            <div id = 'educ-jhs'>
+                <div class = 'educ-img-container'>
+                    <img src = './images/education/jhs.png'></img>
+                </div>
+                <div class = 'educ-summ'>
+                    <div class = 'es-info'>
+                        <p class = 'esi-header'>Info</p>
+                        <div class = 'esi-list'>
+                            <p><span>School Name:</span> Saint Louis University Junior High School</p>
+                            <p><span>Address:</span> 84 C.M. Recto St, Baguio City, Benguet</p>
+                            <p><span>School Years:</span> 2014-2018</p>
+                        </div>
+                    </div>
+                    <div class = 'es-achievements'>
+                        <p class = 'esa-header'>Achievements</p>
+                        <div class = 'esa-list'>
+                            <ul>
+                                <li>With Honors</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class = 'es-selection'>
+                        <div class = 'ess-card' id = 'card-jhs'>
+                            <div class = 'essc-img-container'>
+                                <div class = 'esscic-overlay selected'></div>
+                                <img src=  './images/education/jhs.png'></img>
+                            </div>
+                            <div class = 'essc-text'>
+                                <div class = 'essct-hover' id = 'esscth-jhs'><p>SLU-JHS</p></div>
+                                <div class = 'essct-label'><p>Junior High</p></div>
+                            </div>
+                            
+                        </div>
+                        <div class = 'ess-card' id = 'card-shs' onclick="switchEducInfo(1)">
+                            <div class = 'essc-img-container'>
+                                <div class = 'esscic-overlay'></div>
+                                <img src=  './images/education/shs.png'></img>
+                            </div>
+                            <div class = 'essc-text'>
+                                <div class = 'essct-hover' id = 'esscth-shs'><p>SLU-SHS</p></div>
+                                <div class = 'essct-label'><p>Senior High</p></div>
+                            </div>
+                        </div>
+                        <div class = 'ess-card' id = 'card-bsit' onclick="switchEducInfo(2)">
+                            <div class = 'essc-img-container'>
+                                <div class = 'esscic-overlay'></div>
+                                <img src=  './images/education/bsit.png'></img>
+                            </div>
+                            <div class = 'essc-text'>
+                                <div class = 'essct-hover' id = 'esscth-bsit'><p>SLU-BSIT</p></div>
+                                <div class = 'essct-label'><p>College</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id = 'educ-shs'>
+                <div class = 'educ-img-container'>
+                    <img src = './images/education/shs.png'></img>
+                </div>
+                <div class = 'educ-summ'>
+                    <div class = 'es-info'>
+                        <p class = 'esi-header'>Info</p>
+                        <div class = 'esi-list'>
+                            <p><span>School Name:</span> Saint Louis University Senior High School - STEM</p>
+                            <p><span>Address:</span> 84 C.M. Recto St, Baguio City, Benguet</p>
+                            <p><span>School Years:</span> 2018-2020</p>
+                        </div>
+                    </div>
+                    <div class = 'es-achievements'>
+                        <p class = 'esa-header'>Achievements</p>   
+                        <div class = 'esal-nodata'>
+                            <p>NO DATA</p>
+                        </div>
+                    </div>
+                    <div class = 'es-selection'>
+                        <div class = 'ess-card' id = 'card-jhs' onclick="switchEducInfo(0)">
+                            <div class = 'essc-img-container'>
+                                <div class = 'esscic-overlay'></div>
+                                <img src=  './images/education/jhs.png'></img>
+                            </div>
+                            <div class = 'essc-text'>
+                                <div class = 'essct-hover' id = 'esscth-jhs'><p>SLU-JHS</p></div>
+                                <div class = 'essct-label'><p>Junior High</p></div>
+                            </div>
+                            
+                        </div>
+                        <div class = 'ess-card' id = 'card-shs'>
+                            <div class = 'essc-img-container'>
+                                <div class = 'esscic-overlay selected'></div>
+                                <img src=  './images/education/shs.png'></img>
+                            </div>
+                            <div class = 'essc-text'>
+                                <div class = 'essct-hover' id = 'esscth-shs'><p>SLU-SHS</p></div>
+                                <div class = 'essct-label'><p>Senior High</p></div>
+                            </div>
+                        </div>
+                        <div class = 'ess-card' id = 'card-bsit' onclick="switchEducInfo(2)">
+                            <div class = 'essc-img-container'>
+                                <div class = 'esscic-overlay'></div>
+                                <img src=  './images/education/bsit.png'></img>
+                            </div>
+                            <div class = 'essc-text'>
+                                <div class = 'essct-hover' id = 'esscth-bsit'><p>SLU-BSIT</p></div>
+                                <div class = 'essct-label'><p>College</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id = 'educ-bsit'>
+                <div class = 'educ-img-container'>
+                    <img src = './images/education/bsit.png'></img>
+                </div>
+                <div class = 'educ-summ'>
+                    <div class = 'es-info'>
+                        <p class = 'esi-header'>Info</p>
+                        <div class = 'esi-list'>
+                            <p><span>School Name:</span> Saint Louis University - Bachelor Of Science In Information Technology</p>
+                            <p><span>Address:</span>Bakakeng, Baguio City, Benguet</p>
+                            <p><span>School Years:</span> 2020-2024</p>
+                        </div>
+                    </div>
+                    <div class = 'es-achievements'>
+                        <p class = 'esa-header'>Achievements</p>
+                        <div class = 'esa-list'>
+                            <ul>
+                                <li>DOST Merit Scholar</li>
+                                <li>Consistent Dean's Lister</li>
+                                <li>Graduated Magna Cum Laude</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class = 'es-selection'>
+                        <div class = 'ess-card' id = 'card-jhs' onclick="switchEducInfo(0)">
+                            <div class = 'essc-img-container'>
+                                <div class = 'esscic-overlay'></div>
+                                <img src=  './images/education/jhs.png'></img>
+                            </div>
+                            <div class = 'essc-text'>
+                                <div class = 'essct-hover' id = 'esscth-jhs'><p>SLU-JHS</p></div>
+                                <div class = 'essct-label'><p>Junior High</p></div>
+                            </div>
+                            
+                        </div>
+                        <div class = 'ess-card' id = 'card-shs' onclick="switchEducInfo(1)">
+                            <div class = 'essc-img-container'>
+                                <div class = 'esscic-overlay'></div>
+                                <img src=  './images/education/shs.png'></img>
+                            </div>
+                            <div class = 'essc-text'>
+                                <div class = 'essct-hover' id = 'esscth-shs'><p>SLU-SHS</p></div>
+                                <div class = 'essct-label'><p>Senior High</p></div>
+                            </div>
+                        </div>
+                        <div class = 'ess-card' id = 'card-bsit'>
+                            <div class = 'essc-img-container'>
+                                <div class = 'esscic-overlay selected'></div>
+                                <img src=  './images/education/bsit.png'></img>
+                            </div>
+                            <div class = 'essc-text'>
+                                <div class = 'essct-hover' id = 'esscth-bsit'><p>SLU-BSIT</p></div>
+                                <div class = 'essct-label'><p>College</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id = 'wexp-parent'>
+    <div id = 'wexp-content'>
+        <div id = 'wexp-header'>
+            <h1><span>WORK</span> EXPERIENCE</h1>
+        </div>
+        <div id = 'wexp-info'>
+            <div id = 'wexp-selection'>
+                <div class = 'wexps'><p>AWS</p></div>
+            </div>
+            <div id = 'wexp-summary'>
+                <div class = 'wexpsumm'>
+                    <div class = 'wps-gen'>
+                        <div class ='wpsg-img-container'>
+                            <img src = './images/wexp/aws.png'></img>
+                        </div>
+                        <div class = 'wpsg-info'>
+                            <p class = 'wpsg-name'>Advanced World Systems/Solutions</p>
+                            <p><span>Position:</span> Intern</p>
+                            <p><span>Duration:</span> January 2024 - May 2024</p>
+                            <p><span>Address:</span> Alabang Town Center, 5th Floor, ATC BPO 1, Madrigal Ave, Muntinlupa, 1770 Metro Manila</p>
+                        </div>
+                    </div>
+                    <div class = 'wps-desc'>
+                        <div class = 'wpsd-comp'>
+                            <h1>Company Profile</h1>
+                            <p>
+                            Advanced World Solutions/Systems is an  offshore BPO/ITO service provider. It offers several off-site and on-site solutions 
+                            through services such as Applications Development, Data Analytics, Software Quality Assurance, Mobile Development, Embedded Softwares, 
+                            and others.
+
+                            It currently has five(5) offices located in different parts of the Philippines: Makati, Alabang, and Cebu wherein the main headquarters 
+                            for Advanced World Solutions can be found in Makati and the main headquarters of Advanced World Systems can be found in Alabang.
+                            </p>
+                        </div>
+                        <div class = 'wpsd-exp'>
+                            <h1>Experience</h1>
+                            <p>
+                            The team that I was assigned to was established to develop software and web applications which would be used internally by the Dev 2 Department. 
+                            At the time, the team was working on migrating native applications used by the department to the web. When I was assigned to this team, 
+                            we were in charge of migrating the native IMS originally run through Lotus Notes into a web application. Our responsibilities within the team included: 
+                            requirements gathering, design, documentation, and the development of the system.
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+    </div>
+</div>
+<div id = 'block-navbar'></div>
+
+<footer>
+    <div id = 'footer-content'>
+        <i class="bi bi-person-fill"> Author: Raitheon Fared C. Astudillo</i>
+        <i class="bi bi-envelope-fill"> Email: raitheonastudillo@gmail.com</i>
+        <i class="bi bi-telephone-fill"> Contact: (+63)9771945130</i>
+    </div>
+</footer>
+</body>
+</html>
